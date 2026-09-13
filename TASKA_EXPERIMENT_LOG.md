@@ -32,7 +32,7 @@ Preparation is complete. The initial commit was created with `zbk-026 <zhangbaok
 ### Final verification
 
 - `git status --short --branch` is clean and `main` tracks `origin/main`.
-- `git ls-remote origin refs/heads/main` matches `da358fd2b7f6d014e366bdd0112c596f7537bee0`.
+- `git ls-remote origin refs/heads/main` matched the local `HEAD` during final verification.
 - The two reachable commits both use `zbk-026 <zhangbaokang123@sjtu.edu.cn>` as author and committer.
 - Reachable repository content contains no legacy third-party author identifiers.
 - Reflogs were expired and local unreachable objects were pruned; `git fsck --full --no-reflogs --unreachable` reported no objects.
