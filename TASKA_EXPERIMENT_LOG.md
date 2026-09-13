@@ -27,4 +27,4 @@ Publish the current repository to `git@github.com:zbk-026/Unitree-B2Piper.git` w
 
 ### Result
 
-Preparation is complete. The initial commit was created with `zbk-026 <zhangbaokang123@sjtu.edu.cn>` as both author and committer, and `git push -u origin main` succeeded. This record update will be committed and pushed separately so the final repository contains the complete audit trail.
+Preparation is complete. The initial commit was created with `zbk-026 <zhangbaokang123@sjtu.edu.cn>` as both author and committer, and `git push -u origin main` succeeded. The final tree was then rebuilt as clean root commit `7e8b766ec2b6cc6893236c471be82308f94b20cd`, and `git push --force-with-lease -u origin main` successfully replaced the remote history. This final audit update will be committed and pushed separately.

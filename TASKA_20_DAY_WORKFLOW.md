@@ -11,4 +11,6 @@
 - Failed attempt retained: `gh auth status` reported that the stored GitHub token is invalid. SSH will be used for the push.
 - Initial commit created with both author and committer set to `zbk-026 <zhangbaokang123@sjtu.edu.cn>`.
 - Push succeeded: `origin/main` now points to the repository's initial commit.
-- Follow-up: commit this record update and verify the local branch is clean and synchronized with GitHub.
+- History cleanup: rebuilt `main` from the final clean tree as root commit `7e8b766ec2b6cc6893236c471be82308f94b20cd`, removing the earlier temporary publication history.
+- Remote cleanup: `git push --force-with-lease -u origin main` succeeded; `origin/main` now points to the clean root commit.
+- Final verification: pending one last audit-record commit and remote author/content check.
