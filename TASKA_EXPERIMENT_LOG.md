@@ -28,3 +28,12 @@ Publish the current repository to `git@github.com:zbk-026/Unitree-B2Piper.git` w
 ### Result
 
 Preparation is complete. The initial commit was created with `zbk-026 <zhangbaokang123@sjtu.edu.cn>` as both author and committer, and `git push -u origin main` succeeded. The final tree was then rebuilt as clean root commit `7e8b766ec2b6cc6893236c471be82308f94b20cd`, and `git push --force-with-lease -u origin main` successfully replaced the remote history. This final audit update will be committed and pushed separately.
+
+### Final verification
+
+- `git status --short --branch` is clean and `main` tracks `origin/main`.
+- `git ls-remote origin refs/heads/main` matches `da358fd2b7f6d014e366bdd0112c596f7537bee0`.
+- The two reachable commits both use `zbk-026 <zhangbaokang123@sjtu.edu.cn>` as author and committer.
+- Reachable repository content contains no legacy third-party author identifiers.
+- Reflogs were expired and local unreachable objects were pruned; `git fsck --full --no-reflogs --unreachable` reported no objects.
+- `bash -n scripts/run_front.sh` and Python bytecode compilation passed. Isaac Lab was intentionally not started.
