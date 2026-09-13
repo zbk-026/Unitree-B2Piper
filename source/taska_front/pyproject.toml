@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "taska-front"
+version = "1.0.0"
+description = "Reproducible inference environment for the Task A B2Piper front route."
+authors = [{name = "zbk-026", email = "zhangbaokang123@sjtu.edu.cn"}]
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["."]

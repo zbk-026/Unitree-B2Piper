@@ -1,0 +1,18 @@
+# External ATEC model assets (download separately; see README).
+atec_robot_model/
+atec_robot_model.zip
+
+# Local rollout products and Isaac Lab caches.
+logs/
+*.log
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Editors and operating systems.
+.vscode/
+.idea/
+.DS_Store
